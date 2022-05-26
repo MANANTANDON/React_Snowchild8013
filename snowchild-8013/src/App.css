@@ -1,0 +1,15 @@
+body {
+  font-family: "Open Sans";
+}
+
+@media screen and (max-width: 393px) {
+  .AAA {
+    margin-right: -2px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .AAA {
+    margin-right: -2px;
+  }
+}

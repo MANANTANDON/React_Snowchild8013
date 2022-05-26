@@ -1,0 +1,280 @@
+//Animation frameworks
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    height: 30px;
+    width: 30px;
+    margin-top: 500px;
+  }
+  to {
+    opacity: 1;
+    height: 100px;
+    width: 100px;
+    margin-top: 200px;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    height: 30px;
+    width: 30px;
+    margin-left: 150px;
+  }
+  to {
+    opacity: 1;
+    height: 70px;
+    width: 70px;
+    margin-left: 0px;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    margin-left: -200px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+.OUDC {
+  box-sizing: border-box;
+  // border: 2px solid blue;
+  position: absolute;
+  width: 1440px;
+  height: 200px;
+}
+
+.OUDC:hover {
+  box-shadow: 1px 155px 68px -59px rgba(0, 0, 0, 0.73) inset;
+  -webkit-box-shadow: 1px 155px 68px -59px rgba(0, 0, 0, 0.73) inset;
+  -moz-box-shadow: 1px 155px 68px -59px rgba(0, 0, 0, 0.73) inset;
+  border-radius: 15px;
+  .userDetail {
+    animation: slideIn 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+.outerArea {
+  box-sizing: border-box;
+  // border: 2px solid green;
+  width: 400px;
+  margin-left: -150px;
+  align-items: center;
+  height: 300px;
+  // opacity: 0;
+}
+
+.horizonArea {
+  position: absolute;
+  box-sizing: border-box;
+  // border: 2px solid red;
+  width: 1430px;
+  height: 150px;
+  margin: 200px;
+  margin-left: -518px;
+  // opacity: 0;
+}
+
+.horizonArea:hover {
+  .myButton {
+    opacity: 1;
+    animation: fadeIn 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+.outerArea:hover {
+  .myButton {
+    opacity: 1;
+    animation: fadeIn 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+.myButton {
+  position: relative;
+  border: none;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 150px;
+  top: 200px;
+  box-shadow: 0px 0px 55px 25px #000000;
+  opacity: 0;
+}
+
+.myButton img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: 100px;
+  border-radius: 100px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+// .myButton {
+//   border: none;
+//   border-radius: 100px;
+//   height: 100px;
+//   width: 100px;
+//   margin-left: 150px;
+//   margin-top: 500px;
+//   box-shadow: 0px 0px 55px 25px #000000;
+//   opacity: 0;
+// }
+
+// .myButton:hover {
+//   opacity: 1;
+// }
+
+.menu {
+  box-sizing: border-box;
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  bottom: 120px;
+  left: -100px;
+  background: linear-gradient(
+    360deg,
+    rgba(196, 196, 196, 0.4) 0%,
+    rgba(196, 196, 196, 0.2) 100%
+  );
+  box-shadow: 0px 4px 22px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(300px);
+  border-radius: 20px;
+  width: 300px;
+  height: 400px;
+  padding: 15px;
+}
+
+.icons {
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 1150px;
+  margin-top: -50px;
+  column-gap: 60px;
+  color: white;
+}
+
+.icons button {
+  background-color: transparent;
+  border: none;
+}
+
+.userDetail {
+  border-radius: 15px;
+  padding: 10px;
+  width: fit-content;
+  height: 158px;
+  opacity: 0;
+  color: white;
+}
+
+.userDetail:hover {
+  animation: slideIn 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.imageCircle {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.imageCircle img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.userEmail {
+  font-size: 17px;
+  margin-top: -55px;
+  margin-left: 90px;
+}
+
+.postTime {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: -20px;
+  margin-left: 90px;
+}
+
+.PBOA {
+  box-sizing: border-box;
+  height: 400px;
+  width: 100px;
+  margin: auto;
+  position: absolute;
+  margin-top: -600px;
+  margin-left: 1330px;
+}
+.postButton {
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+  font-size: 30px;
+  border: none;
+  background-color: rgb(112, 181, 255);
+  color: white;
+  opacity: 0;
+  margin-left: -150px;
+  margin-top: 160px;
+}
+.postButton:hover {
+  background-color: rgb(42, 144, 253);
+  animation: slideFromLeft 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.PBOA:hover {
+  .postButton {
+    animation: slideFromLeft 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+html,
+body {
+  height: 100vh;
+  // background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.panel {
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+  border-radius: 15px;
+  padding: 7px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.panel img:not(:hover) {
+  opacity: 0.8;
+}
+
+.endPanel {
+  text-align: center;
+  background-color: white;
+  margin: 100px;
+}

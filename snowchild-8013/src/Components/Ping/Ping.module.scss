@@ -1,0 +1,120 @@
+.backBar {
+  box-sizing: border-box;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  background: linear-gradient(
+    115.6deg,
+    rgba(242, 239, 239, 0.35) 0.36%,
+    rgba(242, 239, 239, 0.35) 97.41%
+  );
+  backdrop-filter: blur(30px);
+  /* border: 2px solid orange; */
+}
+
+.backBar:hover {
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px; */
+  box-shadow: 0px 4px 50px -1px rgba(0, 0, 0, 0.25);
+}
+.backButton {
+  box-sizing: border-box;
+  display: flex;
+  background: none;
+  border-radius: 7px;
+  height: 30px;
+  width: 50px;
+  margin-left: 15px;
+  border: none;
+}
+
+.backButton img {
+  height: 15px;
+  width: 10px;
+  position: absolute;
+  top: 12px;
+  left: 38px;
+}
+.backButton:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+[type="file"] + label {
+  background: #f15d22;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem 50px;
+  transition: all 0.3s;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: darken(#f15d22, 10%);
+  }
+
+  &.btn {
+    background-color: #f79159;
+    box-shadow: 0 6px darken(#f79159, 10%);
+    transition: none;
+
+    &:hover {
+      box-shadow: 0 4px darken(#f79159, 10%);
+      top: 2px;
+    }
+  }
+}
+
+.selectFile {
+  box-sizing: border-box;
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.imageCircle {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+  border: 2px solid grey;
+  margin: auto;
+  border-radius: 12px;
+}
+.imageCircle img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.submitButton {
+  border: none;
+  background: transparent;
+  color: #01579b;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.outerButtonBorder {
+  box-sizing: border-box;
+  width: fit-content;
+  margin: auto;
+}
+
+.textDeco {
+  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
